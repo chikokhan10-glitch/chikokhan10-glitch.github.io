@@ -1,25 +1,9 @@
-<!-- Sehemu Mpya ya Elimu -->
-<div class="container" style="margin-top: 50px; border-top: 2px solid #27ae60; padding-top: 30px;">
-    <h2 style="text-align: center; color: #27ae60;">Elimu ya Afya ya Wanyama</h2>
-    <p style="text-align: center; color: #666;">Jifunze zaidi kuhusu kinga na matunzo ya mifugo yako kila siku.</p>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
-        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
-            <h3 style="color: #2c3e50;">Utambuzi wa Mdondo (Newcastle)</h3>
-            <p>Jifunze dalili za mapema za mdondo wa kuku na jinsi ya kuzuia vifo vya ghafla kwenye kundi lako.</p>
-        </div>
-        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
-            <h3 style="color: #2c3e50;">Chanjo za Ng'ombe</h3>
-            <p>Kinga ni bora kuliko tiba. Jua ratiba sahihi ya chanjo ili kulinda uwekezaji wako wa mifugo.</p>
-        </div>
-    </div>
-</div>
 <!DOCTYPE html>
 <html lang="sw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiko Animal Health Clinic</title>
+    <title>Chiko Animal Health Clinic & Academy</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,7 +29,7 @@
             opacity: 0.9;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             padding: 0 20px;
         }
@@ -61,38 +45,65 @@
             color: #27ae60;
             border-bottom: 2px solid #27ae60;
             padding-bottom: 8px;
+            margin-top: 40px;
         }
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            margin-top: 20px;
         }
-        .service-card {
+        .card {
             background-color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border-top: 4px solid #27ae60;
-            text-align: center;
         }
-        .service-card h3 {
+        .card h3 {
             margin-top: 0;
-            color: #34495e;
+            color: #2c3e50;
         }
-        .contact-box {
-            background-color: #34495e;
-            color: white;
-            padding: 25px;
+        
+        /* Sehemu ya Elimu */
+        .elimu-section {
+            background-color: white;
+            padding: 30px;
             border-radius: 12px;
-            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-top: 30px;
+        }
+        .somo-box {
+            background-color: #f9fbf9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #27ae60;
+        }
+        .somo-box h3 {
+            color: #1e7e34;
+            margin-top: 0;
+            font-size: 22px;
+        }
+        .sub-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 15px;
+            text-decoration: underline;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+            line-height: 1.5;
         }
         footer {
             text-align: center;
             padding: 20px;
             color: #7f8c8d;
             font-size: 14px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -111,31 +122,90 @@
 
         <h2>Huduma Zetu Kuu</h2>
         <div class="services">
-            <div class="service-card">
+            <div class="card">
                 <h3>Matibabu na Upasuaji</h3>
                 <p>Tunatibu magonjwa yote ya maambukizi, vimelea, na kutoa huduma za dharura kwa wanyama wagonjwa.</p>
             </div>
-            <div class="service-card">
+            <div class="card">
                 <h3>Chanjo (Vaccination)</h3>
-                <p>Ulinzi thabiti dhidi ya magonjwa hatari kama Kichaa cha Mbwa (Rabies), Sotoka, na Mdondo wa Kuku.</p>
+                <p>Ulinzi thabiti dhidi ya magonjwa hatari kama Kichaa cha Mbwa, Sotoka, na Mdondo wa Kuku.</p>
             </div>
-            <div class="service-card">
+            <div class="card">
                 <h3>Ushauri wa Lishe</h3>
                 <p>Tunatoa elimu ya jinsi ya kulisha mifugo yako ili kuongeza uzalishaji wa maziwa, nyama na mayai.</p>
             </div>
         </div>
 
-        <div class="contact-box">
-            <h3>Wasiliana Nasi Leo</h3>
-            <p>📧 Barua Pepe: info@chikoanimalhealth.com</p>
-            <p>📍 Tunapatikana: Tanzania (Huduma za Shambani Zipo!)</p>
+        <h2>Darasa la Afya: Elimu ya Magonjwa ya Ng'ombe na Mbuzi</h2>
+        
+        <div class="elimu-section">
+            <p style="font-size: 16px; font-style: italic; color: #666; margin-bottom: 30px;">
+                Mfugaji mwenzangu, hapa kuna mwongozo wa kina wa kitabibu ulioundwa kukusaidia kutambua magonjwa mapema, kujua tiba sahihi, na mbinu za kuzuia hasara kwenye banda lako.
+            </p>
+
+            <div class="somo-box">
+                <h3>1. Ugonjwa wa Ndorobo / Arch (Anaplasmosis & Babesiosis)</h3>
+                <p>Huu ni ugonjwa unaoenezwa na kupe na unashambulia sana ng'ombe pamoja na mbuzi, ambapo vimelea vinaharibu seli nyekundu za damu.</p>
+                
+                <div class="sub-title">Dalili Kuu:</div>
+                <ul>
+                    <li>Mnyama kuwa na homa kali sana (hadi nyuzi joto 41°C).</li>
+                    <li>Kukataa kula chakula, kusimama kwa upweke na kukosa nguvu.</li>
+                    <li>Kukauka kwa choo (kuwa kigumu sana) au wakati mwingine kuharisha damu.</li>
+                    <li>Maziwa kushuka kwa ghafla na macho kuwa ya manjano au meupe (hali ya ukosefu wa damu).</li>
+                    <li>Kukojoa mkojo mwekundu kama kahawa (kwa ugonjwa wa Babesia).</li>
+                </ul>
+
+                <div class="sub-title">Tiba (Treatment):</div>
+                <p>Tiba ya haraka inahitajika kabla vimelea havijaharibu damu yote. Dawa zinazotumika ni pamoja na sindano za <strong>Oxytetracycline ya muda mrefu (LA)</strong> au dawa maalum za kuua vimelea vya damu kama <strong>Imidocarb Dipropionate</strong> au <strong>Diminazene Aceturate</strong>. Pia mnyama anapaswa kupewa vitamini za kuongeza damu (Vitamin B Complex).</p>
+
+                <div class="sub-title">Jinsi ya Kuzuia (Prevention):</div>
+                <p>Njia kuu na ya uhakika ya kuzuia ugonjwa huu ni kudhibiti kupe kwa kupiga dawa ya mifugo (Acaricide) kila wiki, kuoga ng'ombe/mbuzi, au kutumia dawa za kumwagia mgongoni (Pour-on) mara kwa mara.</p>
+            </div>
+
+            <div class="somo-box">
+                <h3>2. Ugonjwa wa Homa ya Mapafu (Contagious Bovine/Caprine Pleuropneumonia)</h3>
+                <p>Huu ni ugonjwa hatari sana wa mfumo wa hewa unaosababishwa na bakteria (Mycoplasma). Ng'ombe wana ugonjwa wao (CBPP) na mbuzi wana wa kwao (CCPP).</p>
+                
+                <div class="sub-title">Dalili Kuu:</div>
+                <ul>
+                    <li>Kukohoa sana, hasa mnyama anapotembea au asubuhi kukiwa na baridi.</li>
+                    <li>Kupumua kwa shida kwa kutumia nguvu, huku akitoa sauti ya maumivu (grunt).</li>
+                    <li>Kamasi nzito kutoka puani na mate yanayovuja mdomoni.</li>
+                    <li>Mnyama kusimama amenyoosha shingo mbele na miguu ya mbele imetengana ili kupata hewa.</li>
+                </ul>
+
+                <div class="sub-title">Tiba (Treatment):</div>
+                <p>Ugonjwa huu ukishakomaa unakuwa mgumu sana kutibu na unaweza kusababisha vifo vingi. Katika hatua za awali kabisa, dawa za antibayotiki kama <strong>Tylosin</strong> au <strong>Oxytetracycline</strong> zinaweza kusaidia kupunguza makali, ingawa wanyama wengi wanaopona wanabaki kuwa vyanzo vya maambukizi kwa wengine.</p>
+
+                <div class="sub-title">Jinsi ya Kuzuia (Prevention):</div>
+                <p>Njia pekee ya uhakika ni kufanya <strong>Chanjo ya Kila Mwaka</strong>. Pia, epuka kuchanganya mifugo yako na mifugo migeni minadani au malisho ya wazi bila kuhakikisha afya zao (weka karantini kwa wanyama wapya kwa siku 14-21).</p>
+            </div>
+
+            <div class="somo-box">
+                <h3>3. Ugonjwa wa Sotoka ya Mbuzi na Kondoo (PPR - Peste des Petits Ruminants)</h3>
+                <p>Huu ni ugonjwa wa virusi unaoambukiza kwa kasi sana na kuua idadi kubwa ya mbuzi na kondoo kwenye kundi ndani ya muda mfupi.</p>
+                
+                <div class="sub-title">Dalili Kuu:</div>
+                <ul>
+                    <li>Homa kali ya ghafla na vidonda vinavyoumiza ndani ya mdomo na kwenye ufizi.</li>
+                    <li>Kutoka kwa tongatonga nzito machoni na kamasi zinazoziba pua hadi mnyama anashindwa kupumua.</li>
+                    <li>Kuharisha vibaya sana mfululizo mbolea yenye harufu mbaya sana, jambo linalosababisha mnyama kukonda na kukaukiwa maji mwilini (dehydration) haraka.</li>
+                </ul>
+
+                <div class="sub-title">Tiba (Treatment):</div>
+                <p>Kwa sababu ugonjwa huu unasababishwa na virusi, <strong>hakuna dawa maalum ya kuua virusi hivyo</strong>. Hata hivyo, tunatoa tiba ya kusaidia (Supportive treatment) kwa kutumia antibayotiki kuzuia magonjwa nyemelezi ya mapafu, kusafisha vidonda vya mdomoni na kuwapa dawa ya kuzuia kuharisha pamoja na maji yenye madini (Glucose/Electrolytes).</p>
+
+                <div class="sub-title">Jinsi ya Kuzuia (Prevention):</div>
+                <p>Ugonjwa huu unazuiliwa kwa asilimia 100% kwa kupiga <strong>Chanjo ya PPR</strong> kwa mbuzi wote. Mbuzi wagonjwa wanatakiwa kutengwa haraka sana na mabanda yasafishwe kwa dawa ya kuua vijidudu (disinfectant).</p>
+            </div>
+
         </div>
 
         <footer>
-            © 2026 chikokhan10-glitch.github.io | Website ya Bure ya Afya ya Wanyama
+            © 2026 chikokhan10-glitch.github.io | Jukwaa la Elimu na Tiba ya Wanyama
         </footer>
     </div>
 
 </body>
-  </html>
-  
+</html>

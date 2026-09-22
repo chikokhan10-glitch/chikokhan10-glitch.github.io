@@ -1,0 +1,1523 @@
+<!DOCTYPE html><html lang="sw">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chiko Animal Health & Technology</title><meta name="description"
+content="Chiko Animal Health & Technology - Elimu kuhusu afya ya mifugo, kilimo, teknolojia, AI na udhibiti wa magonjwa.">
+
+<meta name="keywords"
+content="animal health, mifugo, ticks, kupe, tick control, mastitis, rabies, Newcastle disease, nutrition, technology, AI, Tanzania">
+
+<meta name="author" content="Chiko Animal Health & Technology"><style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8f5;
+    color:#18352a;
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1150px;
+    margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:#042d20;
+    color:#dff7eb;
+    padding:8px 0;
+    font-size:14px;
+}
+
+.topbar-content{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:21px;
+    font-weight:800;
+    color:#063d2b;
+}
+
+.logo span{
+    color:#13a765;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#17352a;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#0b9b5b;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(rgba(3,57,39,.82),rgba(4,126,76,.82)),
+    url("https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:100px 0;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,68px);
+    line-height:1.05;
+    margin-bottom:22px;
+}
+
+.hero p{
+    font-size:19px;
+    color:#e7fff2;
+    margin-bottom:25px;
+}
+
+.button{
+    display:inline-block;
+    padding:13px 20px;
+    background:white;
+    color:#087443;
+    border-radius:10px;
+    font-weight:bold;
+    margin:7px 7px 0 0;
+}
+
+.button.green{
+    background:#087443;
+    color:white;
+    border:1px solid white;
+}
+
+.hero-card{
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.3);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+}
+
+/* SECTIONS */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#063d2b;
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#687b72;
+}
+
+/* SEARCH */
+
+.search-box{
+    max-width:700px;
+    margin:0 auto 30px;
+}
+
+.search-box input{
+    width:100%;
+    padding:16px;
+    border:1px solid #cbdad2;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:#087443;
+}
+
+/* CATEGORIES */
+
+.categories{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.category-btn{
+    border:0;
+    background:#e0f2e9;
+    color:#087443;
+    padding:9px 15px;
+    border-radius:30px;
+    margin:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.category-btn:hover,
+.category-btn.active{
+    background:#087443;
+    color:white;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    border:1px solid #e4eee8;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-image{
+    height:210px;
+    overflow:hidden;
+}
+
+.card-image img{
+    height:100%;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:24px;
+}
+
+.tag{
+    display:inline-block;
+    padding:5px 11px;
+    border-radius:30px;
+    background:#e1f5eb;
+    color:#087443;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.card h3{
+    margin:12px 0;
+    color:#063d2b;
+    font-size:22px;
+}
+
+.card p{
+    color:#61736b;
+    margin-bottom:15px;
+}
+
+.read-more{
+    color:#087443;
+    font-weight:bold;
+}
+
+/* ARTICLE */
+
+.article{
+    background:white;
+    margin-bottom:35px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+.article-image{
+    height:380px;
+    overflow:hidden;
+}
+
+.article-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.article-content{
+    padding:35px;
+}
+
+.article-content h2{
+    color:#063d2b;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.article-content h3{
+    color:#087443;
+    margin-top:25px;
+    margin-bottom:8px;
+}
+
+.article-content p{
+    margin-bottom:15px;
+}
+
+.article-content ul{
+    margin-left:25px;
+    margin-bottom:15px;
+}
+
+.note{
+    background:#eaf8f0;
+    border-left:5px solid #087443;
+    padding:18px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+.warning{
+    background:#fff4d6;
+    border-left:5px solid #d39b18;
+    padding:18px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+/* ARTICLE STATS */
+
+.article-stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.stat{
+    background:#eef7f2;
+    color:#087443;
+    padding:8px 14px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* COMMENTS */
+
+.comments-box{
+    margin-top:35px;
+    padding-top:25px;
+    border-top:1px solid #dce8e1;
+}
+
+.comments-box h3{
+    color:#063d2b;
+    margin-top:0;
+}
+
+.comment-form{
+    margin-top:15px;
+}
+
+.comment-form input,
+.comment-form textarea{
+    width:100%;
+    padding:13px;
+    margin-bottom:10px;
+    border:1px solid #ccdcd3;
+    border-radius:10px;
+    font-family:Arial;
+    font-size:15px;
+}
+
+.comment-form textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+.comment-form button{
+    background:#087443;
+    color:white;
+    border:0;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.comment-list{
+    margin-top:20px;
+}
+
+.comment{
+    background:#f5f9f7;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:10px;
+}
+
+.comment strong{
+    color:#063d2b;
+}
+
+.comment small{
+    color:#72847b;
+}
+
+/* ABOUT */
+
+.about-box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+/* CONTACT */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+}
+
+.contact-box h3{
+    color:#063d2b;
+    margin-bottom:12px;
+}
+
+.contact-link{
+    display:inline-block;
+    margin-top:12px;
+    padding:12px 18px;
+    background:#087443;
+    color:white;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#042d20;
+    color:#dff7eb;
+    padding:40px 0;
+    text-align:center;
+}
+
+footer a{
+    color:white;
+}
+
+/* BACK TO TOP */
+
+#topButton{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#087443;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .nav{
+        flex-direction:column;
+        padding:15px 0;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:65px 0;
+    }
+
+    .article-image{
+        height:250px;
+    }
+
+    .article-content{
+        padding:23px;
+    }
+
+    .article-content h2{
+        font-size:28px;
+    }
+
+}
+
+/* =========================
+   TICK ARTICLE SPECIAL
+========================= */
+
+.tick-table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+.tick-table th,
+.tick-table td{
+    border:1px solid #d7e5dd;
+    padding:12px;
+    text-align:left;
+}
+
+.tick-table th{
+    background:#eaf8f0;
+    color:#063d2b;
+}
+
+</style></head><body><!-- TOP BAR --><div class="topbar">
+<div class="container topbar-content"><span>🐄 Animal Health • 🌱 Farming • 💻 Technology • 🤖 AI</span>
+
+<span>📞 0799036715</span>
+
+</div>
+</div><!-- HEADER --><header><div class="container nav"><div class="logo">
+Chiko <span>Animal Health & Technology</span>
+</div><nav>
+<a href="#home">Home</a>
+<a href="#articles">Articles</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav></div></header><!-- HERO --><section class="hero" id="home"><div class="container hero-grid"><div><h1>
+Chiko Animal Health & Technology
+</h1><p>
+Karibu kwenye blog inayochanganya
+<strong>Afya ya Mifugo, Kilimo, Teknolojia na Artificial Intelligence</strong>
+kwa lugha rahisi na yenye mifano ya vitendo.
+</p><a href="#articles" class="button">
+📚 Soma Articles
+</a><a href="#contact" class="button green">
+📞 Wasiliana Nami
+</a></div><div class="hero-card"><h2>🎯 Tunazungumzia nini?</h2><br><p>🐄 Afya ya mifugo</p>
+<p>🌱 Lishe na uzalishaji</p>
+<p>🕷️ Tick control</p>
+<p>🐔 Magonjwa ya kuku</p>
+<p>💻 Teknolojia</p>
+<p>🤖 Artificial Intelligence</p></div></div></section><!-- ARTICLES --><section id="articles"><div class="container"><div class="section-title"><h2>📚 Articles</h2><p>
+Maarifa kuhusu mifugo, kilimo, technology na AI.
+</p></div><div class="search-box"><input
+type="text"
+id="search"
+placeholder="🔎 Tafuta article..."
+onkeyup="searchArticles()">
+
+</div><div class="categories"><button class="category-btn active"
+onclick="filterArticles('all',this)">
+Zote
+</button>
+
+<button class="category-btn"
+onclick="filterArticles('animal',this)">
+Animal Health
+</button>
+
+<button class="category-btn"
+onclick="filterArticles('farming',this)">
+Farming
+</button>
+
+<button class="category-btn"
+onclick="filterArticles('technology',this)">
+Technology
+</button>
+
+<button class="category-btn"
+onclick="filterArticles('ai',this)">
+AI
+</button>
+
+</div><div class="cards" id="articleCards"><!-- TICK CARD --><div class="card" data-category="animal"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1000&q=80"
+alt="Tick control kwa mifugo">
+
+</div><div class="card-content"><span class="tag">
+ANIMAL HEALTH
+</span><h3>
+🕷️ Tick Infestation & Control
+</h3><p>
+Jifunze kuhusu kupe, madhara yake,
+matibabu na njia za kudhibiti tick
+kwa mifugo.
+</p><a href="#ticks" class="read-more">
+Soma zaidi →
+</a></div></div><!-- MASTITIS --><div class="card" data-category="animal"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=1000&q=80"
+alt="Ngombe">
+
+</div><div class="card-content"><span class="tag">Animal Health</span>
+
+<h3>🐄 Mastitis kwa Ng'ombe</h3><p>
+Mastitis ni inflammation ya mammary gland
+ambayo inaweza kuathiri afya ya ng'ombe,
+ubora wa maziwa na uzalishaji.
+</p><a href="#mastitis" class="read-more">
+Soma zaidi →
+</a></div>
+</div><!-- RABIES --><div class="card" data-category="animal"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1000&q=80"
+alt="Mbwa">
+
+</div><div class="card-content"><span class="tag">Animal Health</span>
+
+<h3>🐕 Rabies</h3><p>
+Rabies ni ugonjwa wa viral unaoweza
+kuathiri wanyama na binadamu.
+</p><a href="#rabies" class="read-more">
+Soma zaidi →
+</a></div>
+</div><!-- NEWCASTLE --><div class="card" data-category="animal"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1000&q=80"
+alt="Kuku">
+
+</div><div class="card-content"><span class="tag">Animal Health</span>
+
+<h3>🐔 Newcastle Disease</h3><p>
+Mambo muhimu kuhusu Newcastle disease,
+biosecurity na prevention kwa kuku.
+</p><a href="#newcastle" class="read-more">
+Soma zaidi →
+</a></div>
+</div><!-- NUTRITION --><div class="card" data-category="farming"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=1000&q=80"
+alt="Mifugo na chakula">
+
+</div><div class="card-content"><span class="tag">Farming</span>
+
+<h3>🌱 Nutrition ya Mifugo</h3><p>
+Misingi ya lishe bora, maji,
+roughage, concentrates na minerals.
+</p><a href="#nutrition" class="read-more">
+Soma zaidi →
+</a></div>
+</div><!-- TECHNOLOGY --><div class="card" data-category="technology"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+alt="Computer technology">
+
+</div><div class="card-content"><span class="tag">Technology</span>
+
+<h3>💻 Technology</h3><p>
+Simu, computer, internet, GitHub,
+apps na tools za kujifunza.
+</p><a href="#technology" class="read-more">
+Soma zaidi →
+</a></div>
+</div><!-- AI --><div class="card" data-category="ai"><div class="card-image"><img
+src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80"
+alt="Artificial Intelligence">
+
+</div><div class="card-content"><span class="tag">AI</span>
+
+<h3>🤖 Artificial Intelligence</h3><p>
+Jifunze AI ni nini na jinsi
+inavyoweza kusaidia masomo na kazi.
+</p><a href="#ai" class="read-more">
+Soma zaidi →
+</a></div>
+</div></div></div></section><!-- ==================================================
+     TICK ARTICLE
+================================================== --><section id="ticks"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1600&q=80"
+alt="Tick infestation and control">
+
+</div><div class="article-content"><span class="tag">
+ANIMAL HEALTH
+</span><h2>
+🕷️ Tick Infestation — Matibabu na Control ya Kupe
+</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Kupe (ticks) ni ectoparasites wanaoshikamana na ngozi
+ya wanyama na kunyonya damu. Infestation kubwa inaweza
+kusababisha irritation, blood loss, skin damage na
+kupunguza production.
+</p><h3>🕷️ Dalili za kupe</h3><ul><li>Kuonekana kwa kupe kwenye ngozi au masikioni.</li><li>Mnyama kujikuna au kujisugua mara kwa mara.</li><li>Skin irritation na wounds.</li><li>Hair loss katika maeneo yaliyoathirika.</li><li>Anemia katika infestation kubwa.</li><li>Weakness na kupungua kwa production.</li></ul><h3>🦠 Magonjwa yanayoweza kuhusishwa na ticks</h3><p>
+Baadhi ya ticks wanaweza kusambaza pathogens wanaosababisha
+magonjwa ya mifugo. Mfano ni baadhi ya tick-borne diseases
+kama babesiosis, anaplasmosis na theileriosis, kutegemea
+species ya mnyama na eneo.
+</p><h3>💊 Matibabu ya tick infestation</h3><p>
+Udhibiti wa kupe mara nyingi hutumia <strong>acaricides</strong>.
+Chaguo la acaricide linapaswa kuzingatia species ya mnyama,
+aina ya tick, usugu wa ticks dhidi ya dawa, label ya bidhaa
+na ushauri wa veterinary professional.
+</p><ul><li>
+Dipping kwa kutumia acaricide iliyosajiliwa na kuchanganywa
+kwa concentration iliyoelekezwa kwenye label.
+</li><li>
+Spraying mwili mzima kwa kutumia equipment inayofaa,
+ukihakikisha maeneo ambayo ticks hupatikana yanafikiwa.
+</li><li>
+Pour-on au topical products zinaweza kutumika pale ambapo
+zimeidhinishwa kwa species hiyo.
+</li><li>
+Mnyama mwenye dalili za anemia au tick-borne disease
+anapaswa kuchunguzwa na mtaalamu wa mifugo.
+</li></ul><div class="warning"><strong>⚠️ Muhimu kuhusu dawa:</strong>
+
+Usiongeze concentration ya acaricide kwa kukisia.
+Overdosing inaweza kusababisha toxicity kwa mnyama,
+mtumiaji au mazingira. Fuata label, PPE, mixing instructions
+na withdrawal period ya bidhaa.
+
+</div><h3>🛡️ Tick Control</h3><p>
+Tick control nzuri inahitaji mpango endelevu badala ya
+kutegemea matibabu ya mnyama mmoja tu.
+</p><ul><li>
+Chunguza wanyama mara kwa mara ili kugundua ticks mapema.
+</li><li>
+Tumia acaricide iliyosajiliwa kulingana na maelekezo.
+</li><li>
+Panga dipping au spraying kulingana na tick challenge
+na ushauri wa mtaalamu.
+</li><li>
+Usitumie acaricide mara nyingi bila mpango kwa sababu
+inaweza kuchangia development ya acaricide resistance.
+</li><li>
+Epuka kuchanganya acaricides tofauti bila maelekezo
+ya mtengenezaji au mtaalamu.
+</li><li>
+Wanyama wapya wachunguzwe na kusimamiwa kabla ya
+kuingizwa kwenye kundi.
+</li><li>
+Dhibiti maeneo yenye tick challenge inapowezekana.
+</li></ul><h3>🔄 Acaricide Resistance</h3><p>
+Kama ticks wanaendelea kuonekana licha ya matumizi sahihi
+ya acaricide, kuna uwezekano wa resistance au tatizo la
+application. Usiongeze dose mwenyewe. Mshirikishe veterinary
+professional au livestock officer kwa mpango wa control.
+</p><h3>📋 Mfano wa mpango wa control</h3><table class="tick-table"><tr>
+<th>Hatua</th>
+<th>Kazi</th>
+</tr><tr>
+<td>1</td>
+<td>Inspect animals regularly</td>
+</tr><tr>
+<td>2</td>
+<td>Identify tick problem</td>
+</tr><tr>
+<td>3</td>
+<td>Choose appropriate registered acaricide</td>
+</tr><tr>
+<td>4</td>
+<td>Apply according to product instructions</td>
+</tr><tr>
+<td>5</td>
+<td>Monitor animals and tick burden</td>
+</tr><tr>
+<td>6</td>
+<td>Seek professional advice if control fails</td>
+</tr></table><div class="note"><strong>💡 Kumbuka:</strong>
+
+Tick control bora ni combination ya regular inspection,
+correct acaricide use, good animal management na monitoring
+ya acaricide resistance.
+
+</div><div class="comments-box"><h3>💬 Maoni kuhusu Tick Control</h3><p>
+Una swali au uzoefu kuhusu kupe? Andika maoni yako hapa chini.
+</p><form class="comment-form"
+onsubmit="addComment(event,'ticks')"><input
+type="text"
+id="name-ticks"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-ticks"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">
+💬 Tuma Maoni
+</button></form><div class="comment-list"
+id="comments-ticks">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     MASTITIS
+================================================== --><section id="mastitis"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=1600&q=80"
+alt="Mastitis kwa ngombe">
+
+</div><div class="article-content"><span class="tag">ANIMAL HEALTH</span>
+
+<h2>🐄 Mastitis kwa Ng'ombe</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Mastitis ni inflammation ya mammary gland ya mnyama
+anayetoa maziwa. Ni tatizo muhimu katika dairy farming
+kwa sababu linaweza kupunguza uzalishaji na kubadilisha
+ubora wa maziwa.
+</p><h3>Sababu</h3><ul>
+<li>Maambukizi ya microorganisms.</li>
+<li>Usafi duni wakati wa kukamua.</li>
+<li>Majeraha kwenye teat au udder.</li>
+<li>Mazingira machafu na wet bedding.</li>
+</ul><h3>Dalili</h3><ul>
+<li>Udder kuwa na joto.</li>
+<li>Uvimbe na maumivu.</li>
+<li>Mabadiliko ya appearance ya maziwa.</li>
+<li>Milk yield kupungua.</li>
+<li>Fever katika severe cases.</li>
+</ul><h3>Diagnosis</h3><p>
+Clinical examination inaweza kusaidia kugundua mastitis.
+Tests za milk kama California Mastitis Test (CMT) zinaweza
+kusaidia kutambua inflammation. Culture inaweza kufanyika
+inapohitajika.
+</p><h3>Prevention</h3><ul>
+<li>Usafi wa mikono kabla ya milking.</li>
+<li>Safisha teat na vifaa vya kukamulia.</li>
+<li>Weka mazingira safi.</li>
+<li>Chunguza udder mara kwa mara.</li>
+<li>Manage infected animals kulingana na ushauri wa mtaalamu.</li>
+</ul><div class="warning">
+<strong>⚠️ Muhimu:</strong>
+Usitumie antibiotic bila diagnosis na ushauri wa mtaalamu.
+Zingatia dose, withdrawal period na sheria za veterinary medicines.
+</div><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'mastitis')"><input
+type="text"
+id="name-mastitis"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-mastitis"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-mastitis">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     RABIES
+================================================== --><section id="rabies"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1600&q=80"
+alt="Mbwa na rabies">
+
+</div><div class="article-content"><span class="tag">ANIMAL HEALTH</span>
+
+<h2>🐕 Rabies – Kichaa cha Mbwa</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Rabies ni ugonjwa wa viral unaoathiri central nervous
+system ya mammals na unaweza kuathiri binadamu.
+</p><h3>Transmission</h3><p>
+Mara nyingi virus huenea kupitia saliva ya mnyama
+aliyeambukizwa, hasa baada ya bite au exposure ya saliva
+kwenye jeraha.
+</p><h3>Dalili</h3><ul>
+<li>Mabadiliko ya tabia.</li>
+<li>Aggression au unusual quietness.</li>
+<li>Excessive salivation.</li>
+<li>Difficulty swallowing.</li>
+<li>Neurological signs.</li>
+</ul><h3>Prevention</h3><ul>
+<li>Vaccination ya mbwa na paka.</li>
+<li>Responsible ownership.</li>
+<li>Kudhibiti roaming animals.</li>
+<li>Kuepuka kushika mnyama anayeshukiwa bila PPE.</li>
+</ul><div class="warning"><strong>⚠️ Mtu akiumwa:</strong>
+
+Safisha jeraha mara moja kwa maji mengi na sabuni,
+kisha tafuta huduma ya afya haraka kwa ajili ya assessment
+ya post-exposure treatment.
+
+</div><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'rabies')"><input type="text"
+id="name-rabies"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-rabies"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-rabies">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     NEWCASTLE
+================================================== --><section id="newcastle"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1600&q=80"
+alt="Newcastle disease">
+
+</div><div class="article-content"><span class="tag">ANIMAL HEALTH</span>
+
+<h2>🐔 Newcastle Disease</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Newcastle disease ni ugonjwa wa viral unaoweza kuathiri
+kuku na ndege wengine. Katika outbreaks baadhi ya flocks
+zinaweza kupata mortality kubwa.
+</p><h3>Dalili</h3><ul>
+<li>Coughing na sneezing.</li>
+<li>Nasal discharge.</li>
+<li>Greenish diarrhea.</li>
+<li>Depression.</li>
+<li>Drop in egg production.</li>
+<li>Neurological signs.</li>
+</ul><h3>Uenezaji</h3><p>
+Ugonjwa unaweza kuenea kupitia birds, equipment, clothing,
+footwear, visitors na contaminated materials.
+</p><h3>Biosecurity</h3><ul>
+<li>Punguza unnecessary movement.</li>
+<li>Sanitize equipment.</li>
+<li>Tenga sick birds.</li>
+<li>Quarantine new birds.</li>
+<li>Dhibiti visitors.</li>
+<li>Fuata vaccination program inayofaa.</li>
+</ul><div class="note">
+<strong>💡 Kumbuka:</strong>
+Dalili zinaweza kufanana na magonjwa mengine.
+Diagnosis ya kitaalamu ni muhimu.
+</div><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'newcastle')"><input type="text"
+id="name-newcastle"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-newcastle"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-newcastle">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     NUTRITION
+================================================== --><section id="nutrition"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&w=1600&q=80"
+alt="Lishe ya mifugo">
+
+</div><div class="article-content"><span class="tag">FARMING</span>
+
+<h2>🌱 Nutrition ya Mifugo</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Lishe bora ni msingi wa growth, production,
+reproduction na immunity ya mifugo.
+</p><h3>1. Maji</h3><p>
+Mifugo inahitaji maji safi na salama.
+Water requirement hubadilika kulingana na species,
+production, temperature na aina ya feed.
+</p><h3>2. Roughage</h3><p>
+Pasture, hay na silage ni sources muhimu za fiber
+hasa kwa ruminants.
+</p><h3>3. Concentrates</h3><p>
+Concentrates zinaweza kutoa energy na protein pale
+ambapo forage pekee haitoshi kukidhi mahitaji ya mnyama.
+</p><h3>4. Minerals na Vitamins</h3><p>
+Minerals na vitamins zinahitajika kwa mfumo wa mifupa,
+reproduction, immunity na metabolic functions.
+</p><h3>Tips za lishe bora</h3><ul>
+<li>Toa maji safi.</li>
+<li>Tumia feed yenye ubora.</li>
+<li>Epuka moldy feed.</li>
+<li>Badilisha ration taratibu.</li>
+<li>Balance energy, protein, fiber na minerals.</li>
+</ul><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'nutrition')"><input type="text"
+id="name-nutrition"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-nutrition"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-nutrition">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     TECHNOLOGY
+================================================== --><section id="technology"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
+alt="Technology na computer">
+
+</div><div class="article-content"><span class="tag">TECHNOLOGY</span>
+
+<h2>💻 Technology kwa Masomo na Kazi</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Teknolojia inaweza kusaidia kujifunza, kuhifadhi information,
+kuwasiliana na kujenga kazi za kidigitali.
+</p><h3>🌐 Internet</h3><p>
+Internet inasaidia kupata educational resources, research
+materials, courses na communication tools.
+</p><h3>💻 Computer</h3><p>
+Kujifunza basic computer skills kama file management,
+Word, Excel, browser na security ni muhimu katika dunia ya kazi.
+</p><h3>🐙 GitHub</h3><p>
+GitHub inaweza kutumika kuhifadhi code, kushirikiana kwenye
+projects na ku-host static websites kupitia GitHub Pages.
+</p><h3>🔐 Usalama</h3><ul>
+<li>Usishirikishe password.</li>
+<li>Usimpe mtu OTP.</li>
+<li>Tumia strong passwords.</li>
+<li>Epuka APK kutoka vyanzo visivyoaminika.</li>
+<li>Weka backup ya files muhimu.</li>
+</ul><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'technology')"><input type="text"
+id="name-technology"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-technology"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-technology">
+</div></div></div>
+</div></div></section><!-- ==================================================
+     AI
+================================================== --><section id="ai"><div class="container"><div class="article"><div class="article-image"><img
+src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80"
+alt="Artificial Intelligence">
+
+</div><div class="article-content"><span class="tag">ARTIFICIAL INTELLIGENCE</span>
+
+<h2>🤖 Artificial Intelligence (AI)</h2><div class="article-stats">
+<span class="stat">👁️ Views: <span class="views">0</span></span>
+<span class="stat">💬 Comments: <span class="comment-count">0</span></span>
+</div><p>
+Artificial Intelligence ni teknolojia inayowezesha
+computer systems kufanya tasks zinazohitaji aina fulani
+ya pattern recognition, generation au decision support.
+</p><h3>AI inaweza kusaidia nini?</h3><ul>
+<li>Kutengeneza study notes.</li>
+<li>Kufanya summaries.</li>
+<li>Kutengeneza ideas.</li>
+<li>Kusaidia coding.</li>
+<li>Kusaidia research.</li>
+<li>Kusaidia kuandika drafts.</li>
+<li>Kujifunza languages.</li>
+</ul><h3>AI kwenye Animal Health</h3><p>
+AI inaweza kusaidia katika education, data analysis,
+record keeping na decision support. Hata hivyo, AI haipaswi
+kuchukua nafasi ya qualified veterinary professional katika
+diagnosis na treatment ya mnyama halisi.
+</p><h3>Jinsi ya kuuliza AI vizuri</h3><p>
+Eleza unachotaka, toa context, sema format unayotaka
+na kiwango cha maelezo.
+</p><div class="warning"><strong>🔐 Privacy:</strong>
+
+Usiweke passwords, OTP, banking information au taarifa
+nyeti kwenye AI tools.
+
+</div><div class="comments-box"><h3>💬 Maoni ya Wasomaji</h3><form class="comment-form"
+onsubmit="addComment(event,'ai')"><input type="text"
+id="name-ai"
+placeholder="Jina lako"
+required>
+
+<textarea
+id="comment-ai"
+placeholder="Andika maoni yako..."
+required></textarea><button type="submit">💬 Tuma Maoni</button>
+
+</form><div class="comment-list"
+id="comments-ai">
+</div></div></div>
+</div></div></section><!-- ABOUT --><section id="about"><div class="container"><div class="section-title"><h2>👨‍💻 About Chiko</h2><p>Kuhusu blog hii</p></div><div class="about-box"><p>
+<strong>Chiko Animal Health & Technology</strong>
+ni blog inayolenga kushirikisha maarifa kuhusu animal health,
+livestock production, farming, technology na Artificial Intelligence.
+</p><br><p>
+Lengo ni kufanya information iwe rahisi kueleweka kwa wanafunzi,
+wafugaji, wakulima na watu wanaopenda teknolojia.
+</p><br><p>
+Blog itaendelea kuongezewa articles mpya, study materials,
+farming tips na technology ideas.
+</p><div class="warning"><strong>⚠️ Veterinary Disclaimer</strong>
+
+<p>
+Maudhui ya afya ya mifugo ni kwa ajili ya elimu tu.
+Kwa case halisi, diagnosis na treatment inapaswa kufanywa
+kwa kuhusisha mtaalamu wa mifugo. Usitumie dawa kiholela.
+</p></div></div></div></section><!-- CONTACT --><section id="contact"><div class="container"><div class="section-title"><h2>📞 Contact</h2><p>
+Una swali, idea ya article au unataka kushirikiana?
+</p></div><div class="contact-grid"><div class="contact-box"><h3>📱 WhatsApp / Simu</h3><p>0799036715</p><a
+class="contact-link"
+href="https://wa.me/255799036715">
+
+💬 Fungua WhatsApp
+
+</a></div><div class="contact-box"><h3>✉️ Email</h3><p>chikokhan39@gmail.com</p><a
+class="contact-link"
+href="mailto:chikokhan39@gmail.com">
+
+✉️ Tuma Email
+
+</a></div></div></div></section><!-- FOOTER --><footer><div class="container"><h3>
+Chiko Animal Health & Technology
+</h3><br><p>
+🐄 Animal Health
+&nbsp; • &nbsp;
+🌱 Farming
+&nbsp; • &nbsp;
+🕷️ Tick Control
+&nbsp; • &nbsp;
+💻 Technology
+&nbsp; • &nbsp;
+🤖 AI
+</p><br><p>📞 0799036715</p><p>✉️ chikokhan39@gmail.com</p><br><p>
+© 2026 Chiko Animal Health & Technology
+</p></div></footer><!-- BACK TO TOP --><button id="topButton" onclick="topFunction()">
+↑
+</button><script>
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchArticles(){
+
+    let input =
+    document.getElementById("search")
+    .value
+    .toLowerCase();
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+
+        let text =
+        card.innerText.toLowerCase();
+
+        card.style.display =
+        text.includes(input) ? "block" : "none";
+
+    });
+
+}
+
+
+/* =========================
+   CATEGORY FILTER
+========================= */
+
+function filterArticles(category,button){
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    let buttons =
+    document.querySelectorAll(".category-btn");
+
+    buttons.forEach(function(btn){
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    cards.forEach(function(card){
+
+        if(category==="all"){
+            card.style.display="block";
+        }
+
+        else if(card.dataset.category===category){
+            card.style.display="block";
+        }
+
+        else{
+            card.style.display="none";
+        }
+
+    });
+
+}
+
+
+/* =========================
+   VIEWS
+========================= */
+
+const articleIds = [
+    "ticks",
+    "mastitis",
+    "rabies",
+    "newcastle",
+    "nutrition",
+    "technology",
+    "ai"
+];
+
+function loadViews(){
+
+    articleIds.forEach(function(id){
+
+        let views =
+        parseInt(localStorage.getItem("views-"+id)) || 0;
+
+        let article =
+        document.getElementById(id);
+
+        if(article){
+
+            let counter =
+            article.querySelector(".views");
+
+            if(counter){
+                counter.textContent = views;
+            }
+
+        }
+
+    });
+
+}
+
+function countView(id){
+
+    let key="views-"+id;
+
+    let views =
+    parseInt(localStorage.getItem(key)) || 0;
+
+    views++;
+
+    localStorage.setItem(key,views);
+
+}
+
+
+/*
+   Count a view when article enters
+   the browser viewport.
+*/
+
+const observer =
+new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            let id=entry.target.id;
+
+            if(id && !sessionStorage.getItem("seen-"+id)){
+
+                countView(id);
+
+                sessionStorage.setItem(
+                    "seen-"+id,
+                    "true"
+                );
+
+                loadViews();
+
+            }
+
+        }
+
+    });
+
+},{
+    threshold:0.35
+});
+
+
+articleIds.forEach(function(id){
+
+    let article =
+    document.getElementById(id);
+
+    if(article){
+        observer.observe(article);
+    }
+
+});
+
+
+/* =========================
+   COMMENTS
+========================= */
+
+function getComments(id){
+
+    return JSON.parse(
+        localStorage.getItem("comments-"+id) || "[]"
+    );
+
+}
+
+
+function saveComments(id,comments){
+
+    localStorage.setItem(
+        "comments-"+id,
+        JSON.stringify(comments)
+    );
+
+}
+
+
+function addComment(event,id){
+
+    event.preventDefault();
+
+    let name =
+    document.getElementById("name-"+id).value.trim();
+
+    let text =
+    document.getElementById("comment-"+id).value.trim();
+
+    if(!name || !text){
+        return;
+    }
+
+    let comments =
+    getComments(id);
+
+    comments.push({
+
+        name:name,
+
+        text:text,
+
+        date:new Date().toLocaleString("sw-TZ")
+
+    });
+
+    saveComments(id,comments);
+
+    document.getElementById(
+        "name-"+id
+    ).value="";
+
+    document.getElementById(
+        "comment-"+id
+    ).value="";
+
+    displayComments(id);
+
+}
+
+
+function displayComments(id){
+
+    let comments =
+    getComments(id);
+
+    let box =
+    document.getElementById("comments-"+id);
+
+    if(!box){
+        return;
+    }
+
+    box.innerHTML="";
+
+    comments.forEach(function(comment){
+
+        let div =
+        document.createElement("div");
+
+        div.className="comment";
+
+        div.innerHTML=
+        "<strong>👤 "+
+        escapeHTML(comment.name)+
+        "</strong><br>"+
+        "<small>"+
+        escapeHTML(comment.date)+
+        "</small>"+
+        "<p>"+
+        escapeHTML(comment.text)+
+        "</p>";
+
+        box.appendChild(div);
+
+    });
+
+    let article =
+    document.getElementById(id);
+
+    if(article){
+
+        let counter =
+        article.querySelector(".comment-count");
+
+        if(counter){
+            counter.textContent=comments.length;
+        }
+
+    }
+
+}
+
+
+function escapeHTML(text){
+
+    let div =
+    document.createElement("div");
+
+    div.textContent=text;
+
+    return div.innerHTML;
+
+}
+
+
+/* Load comments */
+
+articleIds.forEach(function(id){
+
+    displayComments(id);
+
+});
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+let topButton =
+document.getElementById("topButton");
+
+window.onscroll=function(){
+
+    if(
+        document.body.scrollTop>400 ||
+        document.documentElement.scrollTop>400
+    ){
+
+        topButton.style.display="block";
+
+    }else{
+
+        topButton.style.display="none";
+
+    }
+
+};
+
+
+function topFunction(){
+
+    window.scrollTo({
+
+        top:0,
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* Initial views */
+
+loadViews();
+
+</script></body>
+</html>
